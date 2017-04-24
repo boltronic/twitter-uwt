@@ -11,7 +11,7 @@
     {
       "displayName": "Pageview",
       "name": "pageview",
-      "libPath": "src/lib/actions/pageview.js",
+      "libPath": "src/lib/actions/sendPageview.js",
       "schema": {
         "$schema": "http://json-schema.org/draft-04/schema#",
         "type": "object",
@@ -21,7 +21,7 @@
     {
       "displayName": "Download",
       "name": "download",
-      "libPath": "src/lib/actions/download.js",
+      "libPath": "src/lib/actions/sendDownload.js",
       "schema": {
         "$schema": "http://json-schema.org/draft-04/schema#",
         "type": "object",
@@ -31,7 +31,7 @@
     {
       "displayName": "Signup",
       "name": "signup",
-      "libPath": "src/lib/actions/signup.js",
+      "libPath": "src/lib/actions/sendSignup.js",
       "schema": {
         "$schema": "http://json-schema.org/draft-04/schema#",
         "type": "object",
@@ -41,7 +41,7 @@
     {
       "displayName": "Custom",
       "name": "custom",
-      "libPath": "src/lib/actions/custom.js",
+      "libPath": "src/lib/actions/sendCustom.js",
       "schema": {
         "$schema": "http://json-schema.org/draft-04/schema#",
         "type": "object",
@@ -51,7 +51,7 @@
     {
       "displayName": "Purchase",
       "name": "purchase",
-      "libPath": "src/lib/actions/purchase.js",
+      "libPath": "src/lib/actions/sendPurchase.js",
       "schema": {
         "$schema": "http://json-schema.org/draft-04/schema#",
         "type": "object",
