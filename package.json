@@ -1,0 +1,16 @@
+{
+  "name": "uwt-reactor",
+  "version": "1.0.0",
+  "description": "Install Twitter UWT Tag",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Twitter",
+  "license": "ISC",
+  "devDependencies": {
+    "@adobe/reactor-sandbox": "^7.14.1",
+    "@adobe/reactor-scaffold": "^1.1.7",
+    "@adobe/reactor-turbine": "^18.1.3"
+  }
+}

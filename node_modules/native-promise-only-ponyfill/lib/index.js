@@ -1,0 +1,1 @@
+var root=global||self,Promise=root.Promise;"undefined"==typeof Promise&&(Promise=require("native-promise-only"),root.Promise=void 0),module.exports=Promise;

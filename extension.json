@@ -1,0 +1,62 @@
+{
+  "displayName": "Twitter Universal Website Tag",
+  "name": "twitter-universal-website-tag",
+  "version": "1.0.0",
+  "description": "Install the Twitter UWT",
+  "author": {
+    "name": "Twitter"
+  },
+  "viewBasePath": "src/view/",
+  "actions": [
+    {
+      "displayName": "Pageview",
+      "name": "pageview",
+      "libPath": "src/lib/actions/pageview.js",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "displayName": "Download",
+      "name": "download",
+      "libPath": "src/lib/actions/download.js",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "displayName": "Signup",
+      "name": "signup",
+      "libPath": "src/lib/actions/signup.js",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "displayName": "Custom",
+      "name": "custom",
+      "libPath": "src/lib/actions/custom.js",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "displayName": "Purchase",
+      "name": "purchase",
+      "libPath": "src/lib/actions/purchase.js",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}
