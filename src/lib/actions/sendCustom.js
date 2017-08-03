@@ -3,7 +3,7 @@
 var logger = require('@turbine/logger');
 
 module.exports = function(settings) {
-  var twtr = require('../helpers/getTwitterQueue');
+  var twtr = require('../helpers/getTwtrQueue');
 
   var options = (settings.parameters || []).reduce(function(allParameters, parameter) {
     allParameters[parameter.key] = parameter.value;

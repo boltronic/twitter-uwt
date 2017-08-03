@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Action</title>
+
+  <link rel="stylesheet" href="//assets.adobedtm.com/activation/reactor/coralui/3.16.0/css/coral.css">
+  <link rel="stylesheet" href="../global.css">
+  <script>
+    window.Coral = window.Coral || {};
+    Coral.options = { typeKitId: 'buj6cmr'};
+  </script>
+
+  <script src="//assets.adobedtm.com/activation/reactor/coralui/3.16.0/js/libs/jquery.js"></script>
+  <script src="//assets.adobedtm.com/activation/reactor/coralui/3.16.0/js/coral.js"></script>
+</head>
+<body class="coral--light">
+  <form>
+    <label>
+      <span class="label">Website Tag ID</span>
+      <input is="coral-textfield" id="txn_id" class="coral-Form-field">
+    </label>
+    </br>
+    <label>
+      <span class="label">Conversion Amount</span>
+      <input is="coral-textfield" id="tw_sale_amount" class="coral-Form-field">
+    </label>
+    </br>
+    <label>
+      <span class="label">Order Quantity</span>
+      <input is="coral-textfield" id="tw_order_quantity" class="coral-Form-field">
+    </label>
+  </form>
+
+  <script src="//assets.adobedtm.com/activation/reactor/extensionbridge/extensionbridge.min.js"></script>
+  <script>
+    window.extensionBridge.register({
+      init: function(info) {
+        document.getElementById('txn_id').value = (info.settings && info.settings.txn_id) || '';
+        document.getElementById('tw_sale_amount').value = (info.settings && info.settings.tw_sale_amount) || '';
+        document.getElementById('tw_order_quantity').value = (info.settings && info.settings.tw_order_quantity) || '';
+      },
+
+      getSettings: function() {
+        return {
+          txn_id: document.getElementById('txn_id').value || '',
+          tw_sale_amount: document.getElementById('tw_sale_amount').value || '',
+          tw_order_quantity: document.getElementById('tw_order_quantity').value || ''
+        };
+      },
+
+      validate: function() {
+        return true;
+      }
+    });
+  </script>
+</body>
+</html>
